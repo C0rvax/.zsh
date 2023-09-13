@@ -59,7 +59,9 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(
   git
   zsh-syntax-highlighting
+  fast-syntax-highlighting
   zsh-autosuggestions
+  zsh-autocomplete
 )
 
 source $ZSH/oh-my-zsh.sh
