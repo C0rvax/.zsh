@@ -6,15 +6,16 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
-
 # If you come from bash you might have to change your $PATH.
- export PATH=$HOME/bin:/usr/local/bin:$PATH
+#  export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+export PATH=$HOME/.local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
   export ZSH=~/.oh-my-zsh
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
+#ZSH_THEME="purify"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -66,6 +67,8 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # ssh
@@ -77,16 +80,23 @@ source $ZSH/oh-my-zsh.sh
 alias savealiases='alias > ~/.bash_aliases'
 alias term='terminator -mb'
 alias 42c='~/Code/clone_piscine/C/'
-alias 42e='~/Code/clone_piscine/Exam/'
-alias 42l='~/Code/42_clone/libft/'
-alias 42t='~/Code/Test/'
-alias 42tl='~/Code/Test/libft/libftTester/'
+alias 42g='~/Code/42/TC/GNL/'
+alias 42gt='~/Code/42/TC/GNLtest/'
+alias 42l='~/Code/42/TC/libft/'
+alias 42lt='~/Code/42/TC/libtest/'
+alias 42p='~/Code/42/TC/printf/'
+alias 42pt='~/Code/42/TC/printftest/'
+alias 42s='~/Code/42/TC/so_long/'
+alias 42pi='~/Code/42/TC/pipex/'
 alias bat='batcat */*'
 alias flcc='cc -Wall -Wextra -Werror'
 alias flgcc='gcc -Wall -Wextra -Werror'
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
-alias zshrc="vi ~/.zsh/myconfig.zsh"
+alias zshrc="nvi ~/.zsh/myconfig.zsh"
 alias szsh='source ~/.zshrc'
-alias ohmyzsh="vi ~/.oh-my-zsh"
-alias vimrc="vi ~/.vim_runtime/my_config.vim"
-
+alias ohmyzsh="nvi ~/.oh-my-zsh"
+alias vimrc="nvi ~/.vim_runtime/my_configs.vim"
+alias ledger="~/ledger_live/ledger-live-desktop-*.AppImage"
+alias libtest="bash ~/Code/libft-war-machine/grademe.sh"
+alias nvi="/home/c0rvax/nvim.appimage"
+alias nvirc="/home/c0rvax/.config/nvim/"
