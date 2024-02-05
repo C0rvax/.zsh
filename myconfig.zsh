@@ -98,5 +98,5 @@ alias ohmyzsh="nvi ~/.oh-my-zsh"
 alias vimrc="nvi ~/.vim_runtime/my_configs.vim"
 alias ledger="~/ledger_live/ledger-live-desktop-*.AppImage"
 alias libtest="bash ~/Code/libft-war-machine/grademe.sh"
-alias nvi="/home/c0rvax/nvim.appimage"
-alias nvirc="/home/c0rvax/.config/nvim/"
+alias nvi='~/nvim.appimage'
+alias nvirc='~/.config/nvim/'
