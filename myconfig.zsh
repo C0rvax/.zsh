@@ -70,6 +70,8 @@ source $ZSH/oh-my-zsh.sh
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 
 # export MANPATH="/usr/local/man:$MANPATH"
+export USER='aduvilla'
+export MAIL='aduvilla@sudent.42.fr'
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
@@ -79,7 +81,7 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 
 alias savealiases='alias > ~/.bash_aliases'
 alias term='terminator -mb'
-alias 42c='~/Code/clone_piscine/C/'
+alias 42r='~/Code/Rendu'
 alias 42g='~/Code/TC/GNL/'
 alias 42gt='~/Code/TC/GNLtest/'
 alias 42l='~/Code/TC/libft/'
@@ -93,15 +95,15 @@ alias 42w='~/Code/TC/push_swap/'
 alias 42v='~/Code/TC/vrac/'
 alias 42sc='~/Code/TC/scripts/'
 alias bat='batcat */*'
-alias vala='valgrind --track-fds=yes --track-origins=yes --leak-check=full'
-alias flcc='cc -Wall -Wextra -Werror'
-alias flgcc='gcc -Wall -Wextra -Werror'
+alias vala='clear && valgrind --track-fds=yes --track-origins=yes --leak-check=full'
+alias flcc='clear && cc -Wall -Wextra -Werror'
+alias flgcc='clear && gcc -Wall -Wextra -Werror'
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias zshrc="nvi ~/.zsh/myconfig.zsh"
 alias szsh='source ~/.zshrc'
 alias ohmyzsh="nvi ~/.oh-my-zsh"
 alias vimrc="nvi ~/.vim_runtime/my_configs.vim"
 alias ledger="~/ledger_live/ledger-live-desktop-*.AppImage"
-alias nvi="/home/c0rvax/AppImage/nvim.appimage"
-alias nvirc="/home/c0rvax/.config/nvim/"
+alias nvi="~/AppImage/nvim.appimage"
+alias nvirc="~/.config/nvim/"
 alias pushs="bash push_swap_tester/tester.sh ../push_swap"
