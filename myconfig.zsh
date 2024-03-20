@@ -97,7 +97,7 @@ alias 42v='~/Code/TC/vrac/'
 alias 42sc='~/Code/TC/scripts/'
 alias bat='batcat */*'
 alias vala='clear && valgrind --track-fds=yes --track-origins=yes --leak-check=full'
-alias valm='valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --tool=memcheck --keep-debuginfo=yes --trace-children=yes --suppressions=valgrind/valgrind.doc --quiet ./minishell'
+alias valm='clear && valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --tool=memcheck --keep-debuginfo=yes --trace-children=yes --suppressions=valgrind/valgrind.doc --quiet ./minishell'
 alias flcc='clear && cc -Wall -Wextra -Werror'
 alias flgcc='clear && gcc -Wall -Wextra -Werror'
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
@@ -108,6 +108,13 @@ alias vimrc="nvi ~/.vim_runtime/my_configs.vim"
 alias ledger="~/ledger_live/ledger-live-desktop-*.AppImage"
 alias nvi="~/AppImage/nvim.appimage"
 alias nvirc="~/.config/nvim/"
-alias pushs="bash push_swap_tester/tester.sh ../push_swap"
 alias glog="git log --graph --oneline --decorate"
 alias chgedit="git config core.editor ~/AppImage/nvim.appimage"
+alias agu="sudo apt-get update"
+alias nagu="sudo nala update"
+alias agg="sudo apt-get upgrade"
+alias nagg="sudo nala upgrade"
+alias agd="sudo apt-get dist-upgrade"
+alias nagd="sudo nala dist-upgrade"
+alias maj="agu && agg && agd"
+alias nmaj="nagu && nagg && nagd"
