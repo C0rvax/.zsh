@@ -103,6 +103,7 @@ alias valm='clear && valgrind --leak-check=full --show-leak-kinds=all --track-or
 alias flcc='clear && cc -Wall -Wextra -Werror'
 alias flgcc='clear && gcc -Wall -Wextra -Werror'
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+alias sniprc="~/.config/nvim/snippets/snippets/"
 alias zshrc="nvi ~/.zsh/myconfig.zsh"
 alias szsh='source ~/.zshrc'
 alias ohmyzsh="nvi ~/.oh-my-zsh"
