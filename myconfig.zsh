@@ -62,7 +62,7 @@ plugins=(
   zsh-syntax-highlighting
   fast-syntax-highlighting
   zsh-autosuggestions
-  zsh-autocomplete
+#  zsh-autocomplete
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -79,35 +79,40 @@ export MAIL='aduvilla@sudent.42.fr'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-alias savealiases='alias > ~/.bash_aliases'
-alias term='terminator -mb'
+# File explo
 alias 42r='~/Code/Rendu'
-alias 42n='~/Code/minishell'
 alias 42c='~/Code/TC/CPP/CPP_04/'
-alias 42f='~/Code/TC/Philo'
-alias 42pi='~/Code/TC/pipex/'
 alias 42v='~/Code/TC/vrac/'
 alias 42s='~/Code/TC/scripts/'
+alias sniprc="~/.config/nvim/snippets/snippets/"
+alias nvirc="~/.config/nvim/"
 alias bat='batcat */*'
+alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+
+# Compilation
 alias vala='clear && valgrind --track-fds=yes --track-origins=yes --leak-check=full --show-leak-kinds=all --trace-children=yes --show-leak-kinds=all'
 alias valm='clear && valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --tool=memcheck --keep-debuginfo=yes --trace-children=yes --suppressions=valgrind/valgrind.doc --quiet ./minishell'
 alias flcc='clear && cc -Wall -Wextra -Werror'
 alias flgcc='clear && gcc -Wall -Wextra -Werror'
-alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
-alias sniprc="~/.config/nvim/snippets/snippets/"
+alias cdb="compiledb -n make && echo '-I\ninclude/' >> compile_flags.txt"
+alias cdbr="rm -rf compile_flags.txt compile_commands.json .cache/"
+
+# Edit rc
 alias zshrc="nvi ~/.zsh/myconfig.zsh"
 alias szsh='source ~/.zshrc'
 alias ohmyzsh="nvi ~/.oh-my-zsh"
 alias vimrc="nvi ~/.vim_runtime/my_configs.vim"
+
+# Exec
 alias ledger="~/ledger_live/ledger-live-desktop-*.AppImage"
 alias nvi="~/AppImage/nvim.appimage"
 alias nvio="~/AppImage/nvim.appimage -O"
-alias nvirc="~/.config/nvim/"
+alias proc="ps -Af"
 alias glog="git log --graph --oneline --decorate"
 alias chgedit="git config core.editor ~/AppImage/nvim.appimage"
+
+# Update
 alias agu="sudo apt-get update"
-alias cdb="compiledb -n make && echo '-I\ninclude/' >> compile_flags.txt"
-alias cdbr="rm -rf compile_flags.txt compile_commands.json .cache/"
 alias nagu="sudo nala update"
 alias agg="sudo apt-get upgrade"
 alias nagg="sudo nala upgrade"
@@ -115,6 +120,8 @@ alias agd="sudo apt-get dist-upgrade"
 alias nagd="sudo nala dist-upgrade"
 alias maj="agu && agg && agd"
 alias nmaj="nagu && nagg && nagd"
-alias proc="ps -Af"
+
+# Remember
+alias savealiases='alias > ~/.bash_aliases'
 alias rsydoc="rsync --progress -avz ~/Documents c0rvax@192.168.1.6:NetBackup"
 alias rssydoc="rsync -e 'ssh -p 22' --progress -avz ~/Documents c0rvax@192.168.1.6:NetBackup"
