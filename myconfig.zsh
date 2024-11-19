@@ -81,7 +81,7 @@ export MAIL='aduvilla@sudent.42.fr'
 
 # File explo
 alias 42r='~/Code/Rendu'
-alias 42c='~/Code/TC/CPP/CPP_05/'
+alias 42c='~/Code/TC/CPP/CPP_06/'
 alias 42v='~/Code/TC/vrac/'
 alias 42s='~/Code/TC/scripts/'
 alias sniprc="~/.config/nvim/snippets/snippets/"
@@ -112,6 +112,7 @@ alias glog="git log --graph --oneline --decorate"
 alias chgedit="git config core.editor ~/AppImage/nvim.appimage"
 
 # Update
+alias babel="bash ~/scripts/synchroToNas.sh"
 alias agu="sudo apt-get update"
 alias nagu="sudo nala update"
 alias agg="sudo apt-get upgrade"
