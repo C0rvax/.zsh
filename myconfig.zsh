@@ -82,6 +82,7 @@ export MAIL='aduvilla@sudent.42.fr'
 # File explo
 alias 42r='~/Code/Rendu'
 alias 42c='~/Code/TC/CPP/CPP_06/'
+alias 42i='~/Code/Ft_IRC/'
 alias 42v='~/Code/TC/vrac/'
 alias 42s='~/Code/TC/scripts/'
 alias sniprc="~/.config/nvim/snippets/snippets/"
