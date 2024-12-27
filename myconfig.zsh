@@ -82,7 +82,7 @@ export MAIL='aduvilla@sudent.42.fr'
 # File explo
 alias 42r='~/Code/Rendu'
 alias 42c='~/Code/TC/CPP/CPP_06/'
-alias 42i='~/Code/Ft_IRC/'
+alias 42i='~/Code/ft_irc/'
 alias 42v='~/Code/TC/vrac/'
 alias 42s='~/Code/TC/scripts/'
 alias sniprc="~/.config/nvim/snippets/snippets/"
@@ -97,6 +97,7 @@ alias flcc='clear && cc -Wall -Wextra -Werror'
 alias flgcc='clear && gcc -Wall -Wextra -Werror'
 alias cdbr="rm -rf compile_flags.txt compile_commands.json .cache/"
 alias cdb="cdbr ; compiledb -n make && echo '-I\ninclude/' >> compile_flags.txt"
+alias ircser="valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --track-fds=yes ./ircserv 6667 port"
 
 # Edit rc
 alias zshrc="nvi ~/.zsh/myconfig.zsh"
