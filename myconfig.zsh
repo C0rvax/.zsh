@@ -81,14 +81,17 @@ export MAIL='aduvilla@sudent.42.fr'
 
 # File explo
 alias 42r='~/Code/Rendu'
+alias 42er='~/Code/embeded/Rush00/'
 alias 42c='~/Code/TC/CPP/CPP_06/'
-alias 42i='~/Code/ft_irc/'
+alias 42i='~/Code/TC/inception/'
+alias 42e='~/Code/embeded/Module09/ex03/'
 alias 42v='~/Code/TC/vrac/'
+alias 42t='~/Code/tests/'
 alias 42s='~/Code/TC/scripts/'
 alias sniprc="~/.config/nvim/snippets/snippets/"
 alias nvirc="~/.config/nvim/"
 alias bat='batcat */*'
-alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+alias trea="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
 # Compilation
 alias vala='clear && valgrind --track-fds=yes --track-origins=yes --leak-check=full --show-leak-kinds=all --trace-children=yes --show-leak-kinds=all'
@@ -114,7 +117,6 @@ alias glog="git log --graph --oneline --decorate"
 alias chgedit="git config core.editor ~/AppImage/nvim.appimage"
 
 # Update
-alias babel="bash ~/scripts/synchroToNas.sh"
 alias agu="sudo apt-get update"
 alias nagu="sudo nala update"
 alias agg="sudo apt-get upgrade"
