@@ -84,6 +84,8 @@ alias 42r='~/Code/Rendu'
 alias 42er='~/Code/embeded/Rush00/'
 alias 42c='~/Code/TC/CPP/CPP_06/'
 alias 42i='~/Code/TC/inception/'
+alias 42t='~/Code/TC/ft_transcendence/'
+alias 42tr='~/Code/-ft_transcendence/'
 alias 42e='~/Code/embeded/Module09/ex03/'
 alias 42v='~/Code/TC/vrac/'
 alias 42t='~/Code/tests/'
@@ -105,8 +107,8 @@ alias ircser="valgrind --leak-check=full --show-leak-kinds=all --track-origins=y
 # Edit rc
 alias zshrc="nvi ~/.zsh/myconfig.zsh"
 alias szsh='source ~/.zshrc'
-alias ohmyzsh="nvi ~/.oh-my-zsh"
-alias vimrc="nvi ~/.vim_runtime/my_configs.vim"
+alias vimrc="nvi ~/.config/nvim"
+alias pince="sudo -E ~/AppImage/PINCE-x86_64.AppImage"
 
 # Exec
 alias ledger="~/ledger_live/ledger-live-desktop-*.AppImage"
