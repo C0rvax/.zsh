@@ -129,6 +129,10 @@ alias maj="agu && agg && agd"
 alias nmaj="nagu && nagg && nagd"
 
 # Remember
+alias catdir='find app/services/users -type f ! -name 'out.txt' | while read fichier; do
+  echo "// $fichier" >> out.txt
+  cat "$fichier" >> out.txt
+done'
 alias savealiases='alias > ~/.bash_aliases'
 alias rsydoc="rsync --progress -avz ~/Documents c0rvax@192.168.1.6:NetBackup"
 alias rssydoc="rsync -e 'ssh -p 22' --progress -avz ~/Documents c0rvax@192.168.1.6:NetBackup"
