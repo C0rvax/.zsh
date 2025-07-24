@@ -55,13 +55,11 @@ export MAIL='aduvilla@sudent.42.fr'
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # File explo
-alias 42r='~/Code/Rendu'
 alias 42er='~/Code/embeded/Rush00/'
-alias 42c='~/Code/TC/CPP/CPP_06/'
+alias 42e='~/Code/exam06/'
 alias 42i='~/Code/TC/inception/'
-alias 42t='~/Code/TC/ft_transcendence/'
-alias 42tr='~/Code/-ft_transcendence/'
-alias 42e='~/Code/embeded/Module09/ex03/'
+alias 42tr='~/Code/TC/ft_transcendence/'
+alias 42c='~/Code/embeded/Module09/ex03/'
 alias 42v='~/Code/TC/vrac/'
 alias 42t='~/Code/tests/'
 alias 42s='~/Code/TC/scripts/'
@@ -94,6 +92,7 @@ alias glog="git log --graph --oneline --decorate"
 alias chgedit="git config core.editor ~/AppImage/nvim.appimage"
 
 # Update
+alias savenvirc="mkdir ~/nvim_backup_stable_$(date +%Y%m%d) && cp -r ~/.config/nvim ~/nvim_backup_stable_$(date +%Y%m%d)/config && cp -r ~/.local/share/nvim/lazy ~/nvim_backup_stable_$(date +%Y%m%d)/lazy_plugins"
 alias agu="sudo apt-get update"
 alias nagu="sudo nala update"
 alias agg="sudo apt-get upgrade"
@@ -104,9 +103,15 @@ alias maj="agu && agg && agd"
 alias nmaj="nagu && nagg && nagd"
 
 # Remember
-alias catdir='find app/services/users -type f ! -name 'out.txt' | while read fichier; do
-  echo "// $fichier" >> out.txt
-  cat "$fichier" >> out.txt
+alias catdirs='find app/services/shared -type f ! -name 'out.txt' | while read fichier; do
+  echo "// $fichier\n" >> back.txt
+  cat "$fichier" >> back.txt
+  echo "" >> back.txt
+done'
+alias catdirf='find app/frontend \( -path "app/frontend/public/assets" -o -path "app/frontend/public/fonts" \) -prune -o -type f ! -name "out.txt" -print | while read fichier; do
+  echo "// $fichier" >> front.txt
+  cat "$fichier" >> front.txt
+  echo "" >> front.txt
 done'
 alias savealiases='alias > ~/.bash_aliases'
 alias rsydoc="rsync --progress -avz ~/Documents c0rvax@192.168.1.6:NetBackup"
